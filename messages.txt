@@ -42,3 +42,15 @@ Received message from Dayo : ok
 Received message from Demain : hey boi  
 Accepted new connection from 127.0.0.1:11799 username:okk
 Received message from okk : Hy there too  
+Accepted new connection from 127.0.0.1:11853 username:Dayo
+Accepted new connection from 127.0.0.1:11858 username:ok
+Received message from Dayo : kk  
+Accepted new connection from 127.0.0.1:12023 username:Dayo
+Accepted new connection from 127.0.0.1:12034 username:Dameion
+Received message from Dameion : hey  
+Accepted new connection from 127.0.0.1:12243 username:Dayo
+Accepted new connection from 127.0.0.1:12255 username:
+Accepted new connection from 127.0.0.1:12287 username:Damn
+Accepted new connection from 127.0.0.1:12292 username:Damned
+Received message from Damned :   
+Received message from Damn : Hey  

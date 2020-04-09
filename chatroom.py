@@ -1,25 +1,21 @@
-import client, server, file_handler
+import client, server, file_handler, prompt_window
 import tkinter as tk
 import time, threading
 
 
 
+
 class ChatRoom:
-    rooms = []
+    
     def __init__(self):
         room = threading.Thread(target=self.handle_chatroom)
-        ChatRoom.rooms.append(room)
         room.start()
-        # for room in ChatRoom.rooms:
-        #     room.join()
-    
-
         
 
-
-
     def handle_chatroom(self):
-        self.username = input('Name:  ')
+        self.username = ''
+        prompt_window.PromptWindow(self, 'Input Username to Proceed:')
+        # self.get_name()
         self.prev_msg = ''
         self.x = 200
         self.y = 0
@@ -34,9 +30,6 @@ class ChatRoom:
             thread.join()
 
 
-
-    
-        
 
 
     def build(self):

@@ -3,9 +3,10 @@ import tkinter as tk
 """Collects Client Name"""
 
 class PromptWindow:
-    def __init__(self, message, title='Prompt Window'):
+    def __init__(self, parent, message, title='Prompt Window'):
         self.message = message
         self.title = title
+        self.parent = parent
         
         self.buildui()
 
@@ -24,12 +25,12 @@ class PromptWindow:
 
 
     def on_button_press(self):
-        pass
+        self.parent.username = self.entry.get()
+        self.root.destroy()
     
 
 
     def on_enter(self, event):
-        """Runs getcoord method when enter key pressed"""
         self.on_button_press()
 
 
