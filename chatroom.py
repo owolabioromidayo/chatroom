@@ -2,16 +2,29 @@ import client, server, file_handler
 import tkinter as tk
 import time, threading
 
+
+
 class ChatRoom:
+    rooms = []
     def __init__(self):
+        room = threading.Thread(target=self.handle_chatroom)
+        ChatRoom.rooms.append(room)
+        room.start()
+        # for room in ChatRoom.rooms:
+        #     room.join()
+    
+
+        
+
+
+
+    def handle_chatroom(self):
         self.username = input('Name:  ')
         self.prev_msg = ''
         self.x = 200
         self.y = 0
         self.client = client.Client(self.username)
 
-        
-        # self.build()
 
         threads = [threading.Thread(target=self.build), threading.Thread(target=self.listen)]
         for thread in threads:
@@ -43,6 +56,9 @@ class ChatRoom:
 
         self.button = tk.Button(self.root, text='Send', command=self.handle_click)
         self.button.pack()
+
+        self.new_instance = tk.Button(self.root, text='New window', command= self.create_new_instance)
+        self.new_instance.pack()
         
 
         self.root.mainloop()
@@ -64,6 +80,11 @@ class ChatRoom:
         self.entry.delete(0, tk.END)
         self.client.send_thread(msg)
 
+
+    def create_new_instance(self):
+        thread = threading.Thread(target=ChatRoom)
+        thread.start()
+        thread.join()
             
             
 

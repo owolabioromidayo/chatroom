@@ -27,3 +27,18 @@ Accepted new connection from 127.0.0.1:11350 username:Dayo
 Accepted new connection from 127.0.0.1:11515 username:Dayo
 Received message from Dayo : ok  
 Received message from Dayo : alright  
+Accepted new connection from 127.0.0.1:11604 username:Dayo
+Accepted new connection from 127.0.0.1:11608 username:Demain
+Received message from Demain : Hey there  
+Accepted new connection from 127.0.0.1:11667 username:Dayo
+Accepted new connection from 127.0.0.1:11675 username:Demain
+Accepted new connection from 127.0.0.1:11741 username:Dayo
+Accepted new connection from 127.0.0.1:11758 username:Dyao
+Accepted new connection from 127.0.0.1:11760 username:Demain
+Received message from Demain : Hey there  
+Accepted new connection from 127.0.0.1:11788 username:Dayo
+Accepted new connection from 127.0.0.1:11795 username:Demain
+Received message from Dayo : ok  
+Received message from Demain : hey boi  
+Accepted new connection from 127.0.0.1:11799 username:okk
+Received message from okk : Hy there too  
