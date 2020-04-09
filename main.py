@@ -13,9 +13,9 @@ def app_thread():
 #     client.run('Anonymous', reader=True)
 
 
-def client_thread():
-    name = input('Name: ')
-    client.run(name)
+# def client_thread():
+#     name = input('Name: ')
+#     client.run(name)
 
 
 
@@ -23,7 +23,7 @@ def client_thread():
 if __name__ == "__main__":
 
     threads = [threading.Thread(target=server_thread),
-                threading.Thread(target=client_thread),
+                # threading.Thread(target=client_thread),
                 threading.Thread(target=app_thread)
                 # threading.Thread(target=reader_thread)
                 ]

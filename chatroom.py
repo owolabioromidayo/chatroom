@@ -4,10 +4,11 @@ import time, threading
 
 class ChatRoom:
     def __init__(self):
-        # self.username = input('Name:  ')
+        self.username = input('Name:  ')
         self.prev_msg = ''
         self.x = 200
         self.y = 0
+        self.client = client.Client(self.username)
 
         
         # self.build()
@@ -20,13 +21,28 @@ class ChatRoom:
             thread.join()
 
 
+
     
+        
+
+
     def build(self):
         self.root = tk.Tk()
         self.root.title("Sock Servc")
+        self.root.bind('<Return>', self.handle_click)
 
         self.canvas = tk.Canvas(self.root, width=800, height=600)
         self.canvas.pack()
+
+
+        self.label = tk.Label(self.root, text=self.username)
+        self.label.pack()
+
+        self.entry = tk.Entry(self.root)
+        self.entry.pack()
+
+        self.button = tk.Button(self.root, text='Send', command=self.handle_click)
+        self.button.pack()
         
 
         self.root.mainloop()
@@ -41,6 +57,14 @@ class ChatRoom:
         # while True:
         #     self.listen()
         #     time.sleep(2)
+
+
+    def handle_click(self, event=None):
+        msg = self.entry.get()
+        self.entry.delete(0, tk.END)
+        self.client.send_thread(msg)
+
+            
             
 
     def listen2(self):
