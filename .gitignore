@@ -3,3 +3,5 @@ modules/__pycache__
 utils/__pycache__
 messages.txt
 todo
+.vscode
+test.py
