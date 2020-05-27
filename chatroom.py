@@ -1,4 +1,4 @@
-import client, server, file_handler, prompt_window
+import client, file_handler, prompt_window
 import tkinter as tk
 import time, threading
 

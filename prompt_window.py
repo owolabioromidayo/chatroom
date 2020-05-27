@@ -31,6 +31,7 @@ class PromptWindow:
 
 
     def on_enter(self, event):
+
         self.on_button_press()
 
 
