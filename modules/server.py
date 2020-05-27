@@ -52,21 +52,21 @@ class Server:
                     self.clients[client_socket] = user
 
                     file_handler.send(
-                        F"Accepted new connection from {client_address[0]}:{client_address[1]} username:{user['data'].decode('utf-8')}")
+                        f"{user['data'].decode('utf-8')} [{client_address[0]}:{client_address[1]}] joined the server!")
 
                 else:
                     message = self.receive_message(notified_socket)
 
                     if message is False:
                         print(
-                            f"Closed connection from {self.clients[notified_socket]['data'].decode('utf-8')}")
+                            f"{self.clients[notified_socket]['data'].decode('utf-8')} left the server.")
                         self.sockets_list.remove(notified_socket)
                         del self.clients[notified_socket]
                         continue
 
                     user = self.clients[notified_socket]
                     file_handler.send(
-                        f"Received message from {user['data'].decode('utf-8')} : {message['data'].decode('utf-8')}  ")
+                        f"{user['data'].decode('utf-8')} > {message['data'].decode('utf-8')}  ")
 
                     for client_socket in self.clients:
                         if client_socket != notified_socket:

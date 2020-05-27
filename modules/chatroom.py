@@ -12,7 +12,7 @@ class ChatRoom:
         singlethread(self.handle_chatroom)
 
     def handle_chatroom(self):
-        self.x, self.y = 200, 20
+        self.x, self.y = 50, 20
         self.username = ''
         self.prev_msg = ''
 
@@ -52,11 +52,12 @@ class ChatRoom:
         self.send_btn = tk.Button(
             self.bottom_frame, text='Send', command=self.handle_click
         )
-        self.send_btn.pack()
+        self.send_btn.pack(pady=5)
 
         self.new_instance_btn = tk.Button(
-            self.bottom_frame, text='New window', command=lambda: singlethread(ChatRoom))
-        self.new_instance_btn.pack()
+            self.bottom_frame, text='New window', command=lambda: singlethread(ChatRoom)
+        )
+        self.new_instance_btn.pack(pady=5)
 
         self.bottom_frame.pack()
 
@@ -71,7 +72,7 @@ class ChatRoom:
         while True:
             msg = file_handler.read()[-1]
             if msg != self.prev_msg:
-                self.canvas.create_text(self.x, self.y, text=msg.split())
+                self.canvas.create_text(self.x, self.y, text=msg, anchor=tk.W)
                 self.y += 30
                 self.prev_msg = msg
 

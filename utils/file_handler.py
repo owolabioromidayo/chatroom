@@ -1,6 +1,6 @@
 def send(msg):
     with open('messages.txt', 'a') as f:
-        f.write("\n" + msg)
+        f.write("\n" + msg.strip())
 
 
 def read():

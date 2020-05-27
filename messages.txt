@@ -60,3 +60,28 @@ Accepted new connection from 127.0.0.1:11493 username:a;fjask;j
 Received message from a;fjask;j : asflaskfalsfkj  
 Accepted new connection from 127.0.0.1:11498 username:asfjl;asj
 Accepted new connection from 127.0.0.1:11593 username:as;fasflk
+Accepted new connection from 127.0.0.1:11699 username:fuckoff
+Received message from fuckoff : lfdafjlad  
+Received message from fuckoff : d;lfjdfl;  
+Received message from fuckoff : dlsfkjsdfl  
+Received message from fuckoff : [sdlfjsdf  
+Received message from fuckoff : lsdjlsd;f  
+aslfjasf [127.0.0.1:11722] joined the server!
+aslfjasf > ajlasfj
+aslfjasf > afjslf
+asjl;asf [127.0.0.1:11725] joined the server!
+asjl;asf > asfj;lasfjl
+asjflas [127.0.0.1:11786] joined the server!
+asjflas > asjflas;f
+asjflas > aljaf
+asjflas > lasfjaslf
+asjflas > aasfjl;a
+asjsal;fj [127.0.0.1:11814] joined the server!
+asjsal;fj > sa;lfjsafl;a
+asjsal;fj > alkjasf
+asjsal;fj > lasfjas;fl
+asfjasl;fj [127.0.0.1:11875] joined the server!
+asjfl;saf;jl [127.0.0.1:11878] joined the server!
+asjfl;saf;jl > asjlfas;f
+asjfl;saf;jl > afjls;f
+asjfl;saf;jl > ja;df
